@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Tool website</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AI Tool Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="section">
+        <div class="hero-content">
+            <h2>Welcome to AI Tools Hub</h2>
+            <p>Ecplore powerful AI tools for automating, analyzing, and optimizing your business processes</p>
+            <a href="#demo" class="cta-btn">Try the Demo</a>
+        </div>
+    </section>
+    <section id="products" class="section">
+        <h2>Explore Our AI Products</h2>
+        <div class="product-cards">
+            <div class="card">
+                <h3>AI Text <br> Generator</h3>
+                <p>Generate high-quality, automated text for blogs, ads, and more</p>
+                <a href="#demo">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>AI Image Recognition</h3>
+                <p>Automatically identify and classify objects in image with advance AI algorithm</p>
+                <a href="#demo">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>AI sentiment Analysis</h3>
+                <p>Analyze and understand customer feedback using sentiment analysis tools</p>
+                <a href="#demo">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section id="use-cases" class="section">
+        <h2>AI Use Cases</h2>
+        <p>Discover how AI tools can be applied across industries like healthcare, marketing, and finance.</p>
+        <div class="use-case-cards">
+          <div class="use-case-card">
+            <h3>Marketing</h3>
+            <p>Automate content creation and optimize ad targeting using our AI tools.</p>
+          </div>
+          <div class="use-case-card">
+            <h3>Healthcare</h3>
+            <p>Enhance diagnostics and medical image analysis with AI Image Recognition.</p>
+          </div>
+          <div class="use-case-card">
+            <h3>Customer Sentiment Analysis</h3>
+            <p>Analyze customer feedback and understand sentiments using AI-powered tools.</p>
+          </div>
+        </div>
+      </section> 
+      <section id="demo" class="section demo-section">
+        <h2>AI Tool Demo</h2>
+        <p>Experience the power of our AI tools in real-time! Choose a demo below:</p>
+        <div class="demo-card">
+            <h3>Text Generation</h3>
+            <textarea id="text-input" placeholder="Type something to generate text...."></textarea>
+            <button class="demo-btn" onclick="generateText()">Generate Text</button>
+            <p id="generate-text"></p>
+        </div>
+        <div class="demo-card">
+            <h3>Image Recognition</h3>
+<input type="file" id="image-upload" accept="image" onchange="recognizeImage()">
+            <p id="image-recognition-result">Upload an image to recognize objects.</p>
+        </div>
+        <div class="demo-card">
+            <h3>Sentiment Analysis</h3>
+            <textarea id="sentiment-input" placeholder="Enter feedback for sentiment analysis...."></textarea>
+            <button class="demo-btn" onclick="analyzeSentiment()">Analyze Sentimentt</button>
+            <p id="sentiment-analysis-result"></p>
+        </div>
+      </section>  
+      <section id="about" class="section about-section">
+        <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-description">Welcome to AI Tool Hub, where we leverage advanced artificial intelligence to help businesses automate processes, enhance customer experiences, and drive growth. Our mission is to make AI tools accessible and easy to use for businesses of all sizes.</p>
+        <h3 class="mission-title">Our Mission</h3>
+        <p class="mission-description">We believe in the power of AI to transform industries. From marketing to healthcare, we provide businesses with tools that can save time, reduce costs, and increase efficiency.</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="" 
+               class="team-member-img" alt="Team Member 1">
+            <h4>John Doe</h4>
+            <p class="role">Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src=""  class="team-member-img" alt="Team Member 2">
+            <h4>Jane Smith</h4>
+            <p class="role">Lead Developer</p>
+            </div>
+        </div>
+        </div>
+      </section>
+      <section id="contact" class="section contact-section">
+        <div class="container1">
+        <h2 class="sec-title">Contact Us</h2>
+        <p class="sec-des">If you have any questions or need support, feel free to reach out to us. We're here to help</p>
+        <form action="#" method="post" id="contact-form">
+            <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+            <label for="message">Message:</label>
+            <input type="message" id="message" name="name" rows="4" required>
+            </div>
+            <button type="submit" class="cta-btnn"> Send Message</button>
+        </form>
+        <h3 class="contact-alternative-title">Other Ways To Contact Us</h3>
+        <p>Email:support@aitoolhub.com</p>
+        <p>Phone: +1 123-456-7890</p>
+      </section>
+      <footer id="contact">
+        <div class="footer-content">
+          <p>&copy; 2024 AI Tools Hub | All Rights Reserved</p>
+          <div class="socials">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>

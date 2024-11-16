@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+color: #333;
+}
+header{
+    background-color: purple;
+    color: black;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo h1{
+    margin-left: 20px;
+    font-size: 24px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+nav ul li a:hover{
+    background-color: #575757;
+}
+.section{
+    padding: 60px 20px;
+    text-align: center; 
+    background-color: black;
+}
+.hero-content{
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+.hero-content h2{
+    font-size: 2.5rem;
+    margin-top: -45px;
+}
+.hero-content p{
+    margin-top: 40px;
+}
+.cta-btn{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.cta-btn:hover{
+    background-color: purple;
+    color: black;
+}
+.product-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card{
+    background-color: purple;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#products h2{
+margin-bottom: 15px; 
+margin-top: -80px;
+color: #fff;
+}
+.card h3, .use-case-cards h3{
+    margin-bottom: 35px;
+}
+.card a, .use-case-cards a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.card a:hover{
+    text-decoration: underline;
+}
+#use-cases{
+    margin-top: 10px;
+    padding: 60px 20px;
+    text-align: center;
+}
+#use-cases h2{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+#use-cases p{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.use-case-cards{
+    background-color: purple;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+box-shadow: 10px rgba(0, 0, 0, 0.1);
+}
+.use-case-card h3{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.use-case-card p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.use-case-card:hover{
+    transform: translateY(-5px) ;
+    box-shadow: 16px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.demo-section{
+    margin-top: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 60px 20px;
+}
+.demo-card{
+    background-color: purple;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+margin: 20px 0;
+}
+.demo-card h3{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.demo-card textarea{
+    width: 100%; 
+     height: 100%; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    resize: none;
+}
+.demo-card button.demo-btn{
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+margin-bottom: 5px;
+}
+.demo-card button.demo-btn:hover{
+    background-color: black;
+    color: white;
+}
+.demo-card p{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 10px;
+}
+.demo-card img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+#about{
+    margin-top: 10px;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.section-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: purple;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.section-description, .mission-description{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mission-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: purple;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.team-members{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.team-member{
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.team-member-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid purple;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.team-member-img:hover{
+    transform: scale(1.05s);
+}
+.team-member h4{
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: purple;
+    font-size: bold;
+}
+.role{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 5px;
+}
+#contact{
+    margin-top: 10px;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+.container1{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sec-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.sec-des{
+    font-size: 1.1rem;
+    color: purple;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+label{
+    font-size: 1rem;
+    color: purple;
+    margin-bottom: 8px;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border-radius: 1px solid purple;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+input:focus, textarea:focus{
+    border-color: #fff;
+    outline: none;
+    background-color:purple;
+}
+.cta-btnn{
+    background-color: purple;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.cta-btnn:hover{
+    color: black;
+}
+.contact-alternative-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #fff;
+}
+.contact-alternative-title+p{
+    font-size: 1.1rem;
+    color: #fff;
+}
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+  footer .socials a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+  footer .socials a:hover {
+    color: purple;
+}
+@media(max-width: 480px){
+    header .logo h1{
+        font-size: 20px;
+    }
+    .hero-content h2{
+        font-size: 1.8rem;
+    }
+    .product-cards{
+        flex-direction: column;
+        padding: 0;
+    }
+    .card{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .demo-card h3{
+        font-size: 1.6rem;
+    }
+    .demo-card button.demo-btn{
+font-size: 14px;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+    .team-member-img{
+        width: 120px;
+        height: 120px;
+    }
+    .team-member h4{
+        font-size: 2rem;
+    }
+    .sec-title{
+        font-size: 2rem;
+    }
+    .cta-btnn{
+        font-size: 14px;
+    }
+    footer{
+        padding: 10px 0;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .footer-logo{
+        margin-bottom: 10px;
+    }
+    .footer-links ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
